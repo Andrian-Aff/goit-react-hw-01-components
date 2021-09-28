@@ -1,5 +1,5 @@
 import user from './components/Profile/user.json';
-import Profile from './components/Profile';
+import Profile from './components/Profile/Profile';
 
 import statisticalData from './components/Statistics/statistical-data.json';
 import Section from './components/Section/Section';
