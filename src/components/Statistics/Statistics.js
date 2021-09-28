@@ -9,7 +9,7 @@ export default function Statistics({stats}) {
         key={item.id}
         style={{ backgroundColor: getColor() }}
         className={styles.item}>
-       <span className={styles.label}>{item.lable}</span>
+       <span className={styles.label}>{item.label}</span>
        <span className={styles.percentage}>{item.percentage}%</span>
       </li>
       ))}

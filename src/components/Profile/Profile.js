@@ -7,7 +7,7 @@ export default function Profile({
   userImg = defaultImage, 
   userName, 
   userTag, 
-  userLocation,
+  userlocation,
   userStats
 }) {
   // const { userImg = defaultImage, userName, userTag, userlocation, userStats } = props;
@@ -21,8 +21,8 @@ export default function Profile({
       className={styles.avatar}
     />
     <p className={styles.name}>{userName}</p>
-    <p className={styles.tag}>{userTag}</p>
-    <p className={styles.location}>{userLocation}</p>
+    <p className={styles.tag}>@{userTag}</p>
+    <p className={styles.location}>{userlocation}</p>
   </div>
 
   <ul className={styles.stats}>
@@ -32,7 +32,7 @@ export default function Profile({
     </li>
     <li className={styles.item}>
       <span className={styles.lable}>Views</span>
-      <span className={styles.quantity}>{userStats.views}</span>
+      <span className={styles.quantity}>{userStats.views.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
     </li>
     <li className={styles.item}>
       <span className={styles.lable}>Likes</span>
